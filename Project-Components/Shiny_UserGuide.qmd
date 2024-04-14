@@ -1,0 +1,125 @@
+---
+title: "Shiny User Guide"
+execute: 
+  warning: false
+date: "`r Sys.Date()`"
+---
+
+This is the user guide for Quake Quest. Throughout the application, the user will be able to use various parameters to interact with and generate a suitable map for their analysis.
+
+Link to Shiny Application: Quake Quest Application
+
+## Important Terminology
+
+-   Seismic Activity: Frequency and severity of earthquakes in a given region.
+
+## Navigation
+
+The Navigation bar is the primary mode of navigating the app. It is present at the top of every page.
+
+![](https://lh7-us.googleusercontent.com/PdI7SlMP1QE-xUZEMxmAaVJ9UIvWk2eGe2BAl7yR9r5cow0Txs68Ap9tDgw6wnEc0CtTAWE_H9ppL8chDy36Bkibe1atC8FbORgA08935ZDT_BMpBe3W8j80qwNYWt-BOaJ0uL0GOvHBpVg-GtQRKvQ)
+
+On the navigation bar, the unselected pages appear as regular black text. However, the title of the active page will be bolded and underlined as shown on the EDA tab. 
+
+Upon accessing the application for the first time, the Home page will be the active page by default. It provides an overview of the application.
+
+## Exploratory Data Analysis (EDA)
+
+The Exploratory Data Analysis page allows users to visualize the seismic activity data in West Java through interactive map displays.
+
+### Choropleth Map
+
+The following choropleth map display will showcase the seismic activity distribution in West Java. 
+
+![](https://lh7-us.googleusercontent.com/xp65XQhZQos2C0MmHOfuouebNkk-bN4tidXEm_4Z1Cdp3R6he1H2jV-ixvhWJPZlSpRlfjvahpS6lDAidyplCuJqPzt--KerN5_0PymgENl9hCDaxOyVF0R0l4oCeSjujUi16NC9fRDFvjslAqkv3FM)
+
+For the following EDA spatial points map, the following parameters can be varied for a more tailored analysis of the recorded earthquake occurrences in the dataset:
+
+1.  Style:
+
+2.  Magnitude Range:
+
+3.  Number of Classes:
+
+![](https://lh7-us.googleusercontent.com/HTrZGe5H7H-cHS63dREyQOdNU8ORXCx708eTEVNwrmfLT29S7CDS8k76uvL-_aKjjrx8SRvV3vfGW4RtwLeyPG0UGLNtNHgCq1oG3vsc4g8dlFJ5SFB16BDPxHMFTocw7R9yn5INu5ORq20vZz-ECLw)
+
+For the following EDA spatial points map, the following parameters can be varied for a more tailored analysis of the recorded earthquake occurrences in the data:
+
+1.  Location: 
+
+    -   Location filters are provided to allow users to refine their analysis by selecting provinces and sub-districts within West Java. 
+
+    -   To filter seismic activity by location, click on the dropdown menu to reveal the list of available options.
+
+    -   The sub-district options will vary depending on the province option that has been selected
+
+2.  Date:
+
+3.  Show all events: The option to show all the recorded earthquake events is also provided.
+
+## Spatial Autocorrelation
+
+### Global Moran's I Test
+
+![](images/photo_2024-04-14%2023.17.33.jpeg)
+
+### Hot/Cold Spots
+
+![](https://lh7-us.googleusercontent.com/leB6i_ipTU-O1GJ4Kp9UjsJrm8hdjPaO4pP8LPv_SGdtE_jNvlTqPtZvq8XMQj5iTvdCifcu3bh5g5CSNRePu9CL5BpfvxmNu6oV2xOmM4OSvGZGBc5nrvLaRPNEsxphLFNii9geUBiCAs-Tj12ADE4)
+
+For the following spatial autocorrelation hot/cold spots map, the following parameters can be varied for a more tailored analysis of hot and cold spots in the data:
+
+1.  Scale:
+    -   Scale parameter in the st_inverse_distance function that controls the scaling factor for the inverse distance weights.
+
+    -   Adjusting this parameter will impact the influence of distant neighbours on the computed weights.
+
+    -   Higher values of scale result in a more gradual decrease in weight with distance, while lower values give more weight to closer neighbours.
+2.  Alpha:
+    -   The alpha parameter in the st_inverse_distance function controls how fast the weight decreases as distance increases.
+
+    -   A higher alpha value makes the weight decrease faster, while lower values make it decrease slower.\
+3.  Number of Simulations:
+    -   To control the number of permutations used in the local Moran's I analysis.
+
+    -   Increasing the number of simulations generally leads to more accurate results but also increases computation time.
+
+## Emerging Hotspot Analysis
+
+### Mann-Kendall Test
+
+![](images/photo_2024-04-14%2023.17.26.jpeg)
+
+To generate a time series plot showing the GI\* variation over the years.
+
+1.  Location:
+
+    -   Location filters are provided to show the GI\* variation over the years for a specific sub district.
+
+    -   For each location across all time-periods, the Mann-Kendall trend test is done to identify any temporal trend in Gi\* values over all time periods
+
+    -   Select the province and the specific subdistrict you would like to analyse
+
+2.  Identify Neighbours:
+
+    -   st_knn(): calculates the k-nearest neighbors for each point in the geometry column.
+
+    -   st_contiguity(): calculates a spatial weights matrix based on contiguity relationships between spatial features
+
+    -   st_dist_band(): computes a spatial weights matrix where each spatial feature is associated with its neighboring features based on the specified distance bands. The weights assigned to these neighboring relationships can be binary (indicating presence or absence of a relationship) or distance-based
+
+3.  Show distribution line:
+
+    -   Show the mean line of Gi\* of other locations to find any anomalies in trend
+
+### Emerging Hotspot Analysis
+
+1.  Define the number of time lags to include in the neighbourhood for calculating the local Gi\*
+    -   Time lag refers to the temporal interval between observations or events.
+    -   In spatial-temporal analysis like the Emerging Hotspot Analysis, the number of time lags determines how far back in time you want to consider when defining the neighborhood for each observation.
+2.  Define the number of simulations
+    -   In the context of spatial analysis, simulations are often used to generate a null distribution against which the observed spatial patterns can be compared.
+    -   The number of simulations determines how many random spatial arrangements will be generated to create the null distribution.
+3.  Define the significance threshold
+    -   The significance threshold is the level of statistical significance used to determine whether the observed spatial patterns are statistically significant or occurred by random chance.
+    -   It is usually expressed as a p-value or a critical value derived from the null distribution generated by the simulations.

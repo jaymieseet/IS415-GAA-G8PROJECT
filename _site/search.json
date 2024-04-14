@@ -12,5 +12,82 @@
     "title": "IS415-GAA-G8PROJECT",
     "section": "",
     "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Project-Components/Project-Proposal.html",
+    "href": "Project-Components/Project-Proposal.html",
+    "title": "Project Proposal",
+    "section": "",
+    "text": "Our project focuses on analyzing seismic data sourced from the Earthquake Repository managed by BMKG (an Indonesian non-departmental government agency). This repository contains earthquake events that occurred in Indonesia from 1 November 2008 to 15 December 2023.\nOur analysis involves performing spatio-temporal analysis to identify emerging hotspots for earthquakes. We aim to not only pinpoint regions experiencing frequent seismic activity but also to identify patterns of smaller earthquakes leading to the occurrence of larger seismic events. This aids in understanding the intricate relationship between earthquake occurrences and discovering underlying spatial trends with ease.\nThrough this application, users can access geospatial analysis outcomes on Indonesia’s seismic data without the need for programming skills.\n\n\n\nGiven Indonesia’s geographical location along the Pacific Ring of Fire, the country experiences frequent and intense earthquakes. It lies in the intersections with three major tectonic plates: the Indo-Australian Plate, the Eurasian Plate, and the Pacific Plate. The constant interaction of these plates, along with the interaction with several other minor plates such as the Philippine Sea plate and the Caroline plate, amplifies the geological complexity of the region. This makes it crucial to examine the geospatial data related to seismic activity. We aim to also use this data to conduct further research to understand how geological features might relate to these events.\n\nEarthquakes in Indonesia often strike in densely populated areas, causing many people to lose their homes, livelihoods and property. By leveraging spatial analysis techniques, we can provide insights that can inform proactive disaster management strategies, urban planning decisions and infrastructure resilience in Indonesia. Keeping well-informed is a good way to minimise negative impacts in the event of a seismic activity. \nFurthermore, earthquakes are often met with foreshocks and aftershocks of smaller magnitudes, which can be analysed to understand the spatial patterns and predict coming shocks. This includes identifying areas prone to high levels of seismic activity and implementing building codes and infrastructure improvements to reduce the impact of earthquakes on communities.\nPerforming such spatial analysis necessitates expertise in execution, including proficiency in data wrangling and cleaning to ensure accuracy. However, many users lack coding skills or familiarity with R packages, posing a challenge to understanding and conducting these analyses effectively. Consequently, developing an interactive application offers an accessible solution. Users can comprehend analysis findings and adjust parameters to suit their objectives without the lengthy execution processes.\n\n\n\n\nConducting Exploratory Data Analysis (EDA) provides users with contextual insights into the regions where frequent seismic activities occur.\nConduct spatial autocorrelation analysis\n\nGlobal and Local Moran’s I statistical test to examine the degree of similarity between observations in a dataset based on their spatial proximity\nIdentify specific areas of significant spatial clustering (hotspots and cold spots)\n\nSpatio-temporal analysis to identify emerging hotspots\n\n\n\n\nThis Earthquake dataset is taken from the Earthquake Repository managed by BMKG (an Indonesian non-departmental government agency).  It contains earthquake event data from 1 Nov 2008 to 15 Dec 2023, but may not be accurate for some of the last earthquake events recorded. \n\nIndonesia’s Subnational Administrative Boundaries extracted from HDX."
+  },
+  {
+    "objectID": "Project-Components/Project_Purpose.html",
+    "href": "Project-Components/Project_Purpose.html",
+    "title": "Project Overview",
+    "section": "",
+    "text": "This project presents a web-based graphic user interface application designed to conduct comprehensive exploratory data analysis, spatial autocorrelation, and spatio-temporal analysis of seismic activities in West Java, Indonesia. Leveraging seismic data sourced from the Earthquake Repository managed by BMKG, spanning from November 1, 2008, to December 15, 2023, the study aims to understand the complex relationship between earthquake occurrences and spatial trends. By providing users with accessible geospatial analysis outcomes, the application empowers stakeholders to gain insights into Indonesia’s seismic landscape without requiring programming expertise."
+  },
+  {
+    "objectID": "Project-Components/Project_Purpose.html#project-motivation",
+    "href": "Project-Components/Project_Purpose.html#project-motivation",
+    "title": "Project Overview",
+    "section": "Project Motivation",
+    "text": "Project Motivation\nGiven Indonesia’s geographical location along the Pacific Ring of Fire, the country experiences frequent and intense earthquakes. It lies in the intersections with three major tectonic plates: the Indo-Australian Plate, the Eurasian Plate, and the Pacific Plate. The constant interaction of these plates, along with the interaction with several other minor plates such as the Philippine Sea plate and the Caroline plate, amplifies the geological complexity of the region. This makes it crucial to examine the geospatial data related to seismic activity. We aim to also use this data to conduct further research to understand how geological features might relate to these events.\nEarthquakes in Indonesia often strike in densely populated areas, causing many people to lose their homes, livelihoods and property. By leveraging spatial analysis techniques, we can provide insights that can inform proactive disaster management strategies, urban planning decisions and infrastructure resilience in Indonesia. Keeping well-informed is a good way to minimise negative impacts in the event of a seismic activity. \nFurthermore, earthquakes are often met with foreshocks and aftershocks of smaller magnitudes, which can be analysed to understand the spatial patterns and predict coming shocks. This includes identifying areas prone to high levels of seismic activity and implementing building codes and infrastructure improvements to reduce the impact of earthquakes on communities.\nPerforming such spatial analysis necessitates expertise in execution, including proficiency in data wrangling and cleaning to ensure accuracy. However, many users lack coding skills or familiarity with R packages, posing a challenge to understanding and conducting these analyses effectively. Consequently, developing an interactive application offers an accessible solution. Users can comprehend analysis findings and adjust parameters to suit their objectives without the lengthy execution processes."
+  },
+  {
+    "objectID": "Project-Components/Project_Purpose.html#approach-to-task",
+    "href": "Project-Components/Project_Purpose.html#approach-to-task",
+    "title": "Project Overview",
+    "section": "Approach to task",
+    "text": "Approach to task\n\nConducting Exploratory Data Analysis (EDA) provides users with contextual insights into the regions where frequent seismic activities occur.\nConduct spatial autocorrelation analysis\n\nGlobal and Local Moran’s I statistical test to examine the degree of similarity between observations in a dataset based on their spatial proximity\nIdentify specific areas of significant spatial clustering (hotspots and cold spots)\n\nSpatio-temporal analysis to identify emerging hotspots"
+  },
+  {
+    "objectID": "Project-Components/Project_Purpose.html#data-source",
+    "href": "Project-Components/Project_Purpose.html#data-source",
+    "title": "Project Overview",
+    "section": "Data Source",
+    "text": "Data Source\nThis Earthquake dataset is taken from the Earthquake Repository managed by BMKG (an Indonesian non-departmental government agency).  It contains earthquake event data from 1 Nov 2008 to 15 Dec 2023, but may not be accurate for some of the last earthquake events recorded. \n\nIndonesia’s Subnational Administrative Boundaries extracted from HDX."
+  },
+  {
+    "objectID": "Project-Components/Shiny_UserGuide.html",
+    "href": "Project-Components/Shiny_UserGuide.html",
+    "title": "Shiny User Guide",
+    "section": "",
+    "text": "This is the user guide for Quake Quest. Throughout the application, the user will be able to use various parameters to interact with and generate a suitable map for their analysis.\nLink to Shiny Application: Quake Quest Application"
+  },
+  {
+    "objectID": "Project-Components/Shiny_UserGuide.html#important-terminology",
+    "href": "Project-Components/Shiny_UserGuide.html#important-terminology",
+    "title": "Shiny User Guide",
+    "section": "Important Terminology",
+    "text": "Important Terminology\n\nSeismic Activity: Frequency and severity of earthquakes in a given region."
+  },
+  {
+    "objectID": "Project-Components/Shiny_UserGuide.html#navigation",
+    "href": "Project-Components/Shiny_UserGuide.html#navigation",
+    "title": "Shiny User Guide",
+    "section": "Navigation",
+    "text": "Navigation\nThe Navigation bar is the primary mode of navigating the app. It is present at the top of every page.\n\nOn the navigation bar, the unselected pages appear as regular black text. However, the title of the active page will be bolded and underlined as shown on the EDA tab. \nUpon accessing the application for the first time, the Home page will be the active page by default. It provides an overview of the application."
+  },
+  {
+    "objectID": "Project-Components/Shiny_UserGuide.html#exploratory-data-analysis-eda",
+    "href": "Project-Components/Shiny_UserGuide.html#exploratory-data-analysis-eda",
+    "title": "Shiny User Guide",
+    "section": "Exploratory Data Analysis (EDA)",
+    "text": "Exploratory Data Analysis (EDA)\nThe Exploratory Data Analysis page allows users to visualize the seismic activity data in West Java through interactive map displays.\n\nChoropleth Map\nThe following choropleth map display will showcase the seismic activity distribution in West Java. \n\nFor the following EDA spatial points map, the following parameters can be varied for a more tailored analysis of the recorded earthquake occurrences in the dataset:\n\nStyle:\nMagnitude Range:\nNumber of Classes:\n\n\nFor the following EDA spatial points map, the following parameters can be varied for a more tailored analysis of the recorded earthquake occurrences in the data:\n\nLocation: \n\nLocation filters are provided to allow users to refine their analysis by selecting provinces and sub-districts within West Java. \nTo filter seismic activity by location, click on the dropdown menu to reveal the list of available options.\nThe sub-district options will vary depending on the province option that has been selected\n\nDate:\nShow all events: The option to show all the recorded earthquake events is also provided."
+  },
+  {
+    "objectID": "Project-Components/Shiny_UserGuide.html#spatial-autocorrelation",
+    "href": "Project-Components/Shiny_UserGuide.html#spatial-autocorrelation",
+    "title": "Shiny User Guide",
+    "section": "Spatial Autocorrelation",
+    "text": "Spatial Autocorrelation\n\nGlobal Moran’s I Test\n\n\n\nHot/Cold Spots\n\nFor the following spatial autocorrelation hot/cold spots map, the following parameters can be varied for a more tailored analysis of hot and cold spots in the data:\n\nScale:\n\nScale parameter in the st_inverse_distance function that controls the scaling factor for the inverse distance weights.\nAdjusting this parameter will impact the influence of distant neighbours on the computed weights.\nHigher values of scale result in a more gradual decrease in weight with distance, while lower values give more weight to closer neighbours.\n\nAlpha:\n\nThe alpha parameter in the st_inverse_distance function controls how fast the weight decreases as distance increases.\nA higher alpha value makes the weight decrease faster, while lower values make it decrease slower.\n\n\nNumber of Simulations:\n\nTo control the number of permutations used in the local Moran’s I analysis.\nIncreasing the number of simulations generally leads to more accurate results but also increases computation time."
+  },
+  {
+    "objectID": "Project-Components/Shiny_UserGuide.html#emerging-hotspot-analysis",
+    "href": "Project-Components/Shiny_UserGuide.html#emerging-hotspot-analysis",
+    "title": "Shiny User Guide",
+    "section": "Emerging Hotspot Analysis",
+    "text": "Emerging Hotspot Analysis\n\nMann-Kendall Test\n\nTo generate a time series plot showing the GI* variation over the years.\n\nLocation:\n\nLocation filters are provided to show the GI* variation over the years for a specific sub district.\nFor each location across all time-periods, the Mann-Kendall trend test is done to identify any temporal trend in Gi* values over all time periods\nSelect the province and the specific subdistrict you would like to analyse\n\nIdentify Neighbours:\n\nst_knn(): calculates the k-nearest neighbors for each point in the geometry column.\nst_contiguity(): calculates a spatial weights matrix based on contiguity relationships between spatial features\nst_dist_band(): computes a spatial weights matrix where each spatial feature is associated with its neighboring features based on the specified distance bands. The weights assigned to these neighboring relationships can be binary (indicating presence or absence of a relationship) or distance-based\n\nShow distribution line:\n\nShow the mean line of Gi* of other locations to find any anomalies in trend\n\n\n\n\nEmerging Hotspot Analysis\n\nDefine the number of time lags to include in the neighbourhood for calculating the local Gi*\n\nTime lag refers to the temporal interval between observations or events.\nIn spatial-temporal analysis like the Emerging Hotspot Analysis, the number of time lags determines how far back in time you want to consider when defining the neighborhood for each observation.\n\nDefine the number of simulations\n\nIn the context of spatial analysis, simulations are often used to generate a null distribution against which the observed spatial patterns can be compared.\nThe number of simulations determines how many random spatial arrangements will be generated to create the null distribution.\n\nDefine the significance threshold\n\nThe significance threshold is the level of statistical significance used to determine whether the observed spatial patterns are statistically significant or occurred by random chance.\nIt is usually expressed as a p-value or a critical value derived from the null distribution generated by the simulations."
   }
 ]

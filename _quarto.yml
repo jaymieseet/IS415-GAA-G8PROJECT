@@ -2,12 +2,20 @@ project:
   type: website
 
 website:
-  title: "IS415-GAA-G8PROJECT"
+  title: "IS415-GAAProj"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - text: "Project Components"
+        menu: 
+          - text: "Project Purpose"
+            href: "Project-Components/Project_Purpose.html"
+          - text: "Shiny Application User Guide"
+            href: "Project-Components/Shiny_UserGuide.html"
+          - text: "Poster"
+            href: "Project-Components/Project_Poster.html"
 
 format:
   html:

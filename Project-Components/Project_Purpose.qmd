@@ -1,0 +1,41 @@
+---
+title: "Project Overview"
+execute: 
+  warning: false
+date: "`r Sys.Date()`"
+---
+
+## Abstract
+
+This project presents a web-based graphic user interface application designed to conduct comprehensive exploratory data analysis, spatial autocorrelation, and spatio-temporal analysis of seismic activities in West Java, Indonesia. Leveraging seismic data sourced from the Earthquake Repository managed by BMKG, spanning from November 1, 2008, to December 15, 2023, the study aims to understand the complex relationship between earthquake occurrences and spatial trends. By providing users with accessible geospatial analysis outcomes, the application empowers stakeholders to gain insights into Indonesia's seismic landscape without requiring programming expertise.
+
+## Project Motivation
+
+Given Indonesia’s geographical location along the Pacific Ring of Fire, the country experiences frequent and intense earthquakes. It lies in the intersections with three major tectonic plates: the Indo-Australian Plate, the Eurasian Plate, and the Pacific Plate. The constant interaction of these plates, along with the interaction with several other minor plates such as the Philippine Sea plate and the Caroline plate, amplifies the geological complexity of the region. This makes it crucial to examine the geospatial data related to seismic activity. We aim to also use this data to conduct further research to understand how geological features might relate to these events.
+
+Earthquakes in Indonesia often strike in densely populated areas, causing many people to lose their homes, livelihoods and property. By leveraging spatial analysis techniques, we can provide insights that can inform proactive disaster management strategies, urban planning decisions and infrastructure resilience in Indonesia. Keeping well-informed is a good way to minimise negative impacts in the event of a seismic activity. 
+
+Furthermore, earthquakes are often met with foreshocks and aftershocks of smaller magnitudes, which can be analysed to understand the spatial patterns and predict coming shocks. This includes identifying areas prone to high levels of seismic activity and implementing building codes and infrastructure improvements to reduce the impact of earthquakes on communities.
+
+Performing such spatial analysis necessitates expertise in execution, including proficiency in data wrangling and cleaning to ensure accuracy. However, many users lack coding skills or familiarity with R packages, posing a challenge to understanding and conducting these analyses effectively. Consequently, developing an interactive application offers an accessible solution. Users can comprehend analysis findings and adjust parameters to suit their objectives without the lengthy execution processes.
+
+## Approach to task
+
+1.  Conducting Exploratory Data Analysis (EDA) provides users with contextual insights into the regions where frequent seismic activities occur.
+
+2.  Conduct spatial autocorrelation analysis
+
+     a. Global and Local Moran’s I statistical test to examine the degree of similarity between observations in a dataset based on their spatial proximity
+
+     b. Identify specific areas of significant spatial clustering (hotspots and cold spots)
+
+3.  Spatio-temporal analysis to identify emerging hotspots
+
+## Data Source
+
+This [Earthquake dataset](https://github.com/kekavigi/repo-gempa) is taken from the Earthquake Repository managed by BMKG (an Indonesian non-departmental government agency).  It contains earthquake event data from 1 Nov 2008 to 15 Dec 2023, but may not be accurate for some of the last earthquake events recorded. 
+
+\
+Indonesia’s Subnational Administrative Boundaries extracted from [HDX](https://data.humdata.org/dataset/cod-ab-idn?force_layout=desktop).
+
+

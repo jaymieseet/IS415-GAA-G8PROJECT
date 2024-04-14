@@ -1,0 +1,8 @@
+---
+title: "Project Poster"
+execute: 
+  warning: false
+date: "`r Sys.Date()`"
+---
+
+![](images/gaa poster (59.4 x 84.1 cm).png)
